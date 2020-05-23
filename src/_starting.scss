@@ -86,16 +86,16 @@ h1 {
   padding: 0 0 3px 0;
 }
 #header .picture {
-  height: 150px;
-  background-image: url("../images/header7-1.png");
+  height: 180px;
+  background-image: url("../images/header7-2.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  line-height: 150px;
-  padding: 0 60px;
-  color: #ffffff;
-  font-size: 20px;
-  font-weight: 700;
+  //   line-height: 150px;
+  //   padding: 0 60px;
+  //   color: #ffffff;
+  //   font-size: 20px;
+  //   font-weight: 700;
 }
 
 /***
@@ -105,7 +105,7 @@ h1 {
   display: flex;
   justify-content: center;
   align-content: center;
-  line-height: 60px;
+  line-height: 30px;
   text-align: center;
 }
 
@@ -120,7 +120,9 @@ h1 {
   color: $primaryColor;
   border-bottom: 3px solid $primaryColor;
 }
-
+// #menu-buttons {
+//   margin: 20px;
+// }
 // CONTENT
 
 #content {
