@@ -18,8 +18,7 @@ a {
 body {
   background-color: $background-color;
   color: $body-font;
-  //   color: $body-font;
-  //   background-color: $color-backgrounds;
+
   font-family: $font-main;
   font-weight: 500;
 
@@ -56,29 +55,6 @@ h1 {
   padding: 15px;
 }
 
-// #title-bar {
-//   color: #808080;
-//   background-color: $mainWhite;
-//   font-size: 14px;
-//   padding: 30px;
-//   border-bottom: 1px solid #f0f0f0;
-//   font-weight: 400;
-//   text-align: center;
-//   margin-bottom: 30px;
-// }
-
-//MAIN
-
-// #main {
-//   width: 80%;
-//   height: 100%;
-//   margin: auto;
-//   display: flex;
-//   flex-direction: column;
-//   align-content: center;
-//   justify-content: center;
-// }
-
 // HEADER
 #header {
   width: 100%;
@@ -105,9 +81,8 @@ h1 {
   //   font-weight: 700;
 }
 
-/***
-* NAV-BAR
-*/
+// NAV BAR
+
 #header2 .nav-bar,
 #header .nav-bar {
   display: flex;
@@ -139,13 +114,12 @@ h1 {
 }
 
 #content .tab {
-  display: none;
   width: 100%;
 }
 
-#content .tab.selected {
-  display: block;
-}
+// #content .tab.selected {
+//   display: block;
+// }
 
 #content .tab .title .fa {
   font-size: 20px;
