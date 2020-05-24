@@ -1,17 +1,20 @@
-.btn-slideMenue > .Smenu {
+.btn-slideMenue > section {
   max-width: 260px;
   width: 90%;
-  margin-right: auto;
-  margin-left: auto;
+  margin-right: 40px;
+  margin-left: 60px;
   margin-top: 200px;
   margin-bottom: 0;
+  //   position: fixed;
 }
 
 .cbp-spmenu {
   background: $primaryColor;
+  //   position: fixed;
+}
+.cbp-spmenu-fixed {
   position: fixed;
 }
-
 .cbp-spmenu h3 {
   color: $secWhite;
   font-size: 1.9em;
@@ -29,12 +32,12 @@
 }
 
 .cbp-spmenu a:hover {
-  background: $secGray;
+  background: $button-hover;
   color: $secWhite;
 }
 
 .cbp-spmenu a:active {
-  background: #afdefa;
+  background: $button-active;
   color: $primaryColor-font;
 }
 
@@ -112,7 +115,8 @@
 /* Push classes applied to the body */
 
 .cbp-spmenu-push {
-  overflow-x: hidden;
+  //   overflow-x: hidden;
+  // goes - behind ; to lower layer
   position: relative;
   left: 0;
 }

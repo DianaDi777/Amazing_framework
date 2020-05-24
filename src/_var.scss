@@ -1,20 +1,23 @@
 //default colors
 $primaryColor: #a1a9fe;
+//side menue
 $primaryColor-font: #8187d8;
+$button-hover: #c6cbef;
+$button-active: #e9edfb;
+
+//fromframework
 $mainWhite: #ffffff;
-$mainGrey: #ececec;
-$mainBlack: #383838;
-
-//secondary
-
-$secWhite: #f4f4f4;
-$secGray: #ccc;
-$thirdGray: #d9d9d9;
+$mainGrey: #ececec; //NO $body-font
+$mainBlack: #383838; //NO
 
 //body
 
-$body-font: $mainBlack;
-$color-backgrounds: $mainGrey;
+$body-font: #808080;
+$background-color: #fafafa;
+//secondary
+$secWhite: #f4f4f4;
+$secGray: #ccc;
+$thirdGray: #d9d9d9;
 
 $header: #19d5a5;
 

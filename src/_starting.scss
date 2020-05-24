@@ -16,8 +16,8 @@ a {
   color: $mainBlack;
 }
 body {
-  background-color: #fafafa;
-  color: #808080;
+  background-color: $background-color;
+  color: $body-font;
   //   color: $body-font;
   //   background-color: $color-backgrounds;
   font-family: $font-main;
@@ -82,7 +82,14 @@ h1 {
 // HEADER
 #header {
   width: 100%;
+
   height: 210px;
+  padding: 0 0 3px 0;
+}
+
+#header2 {
+  width: 100%;
+  height: 50%;
   padding: 0 0 3px 0;
 }
 #header .picture {
@@ -101,6 +108,7 @@ h1 {
 /***
 * NAV-BAR
 */
+#header2 .nav-bar,
 #header .nav-bar {
   display: flex;
   justify-content: center;
@@ -108,14 +116,15 @@ h1 {
   line-height: 30px;
   text-align: center;
 }
-
+#header2 .nav-bar > div,
 #header .nav-bar > div {
   margin: 0 20px;
   border-bottom: 3px solid transparent;
   cursor: pointer;
 }
 
-#header .nav-bar > div.selected {
+#header .nav-bar > div.selected,
+#header2 .nav-bar > div.selected {
   margin: 0 20px;
   color: $primaryColor;
   border-bottom: 3px solid $primaryColor;
