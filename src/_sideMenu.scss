@@ -1,19 +1,5 @@
-.btn-slideMenue > section {
-  max-width: 260px;
-  width: 90%;
-  margin-right: 40px;
-  margin-left: 60px;
-  margin-top: 200px;
-  margin-bottom: 0;
-}
-
 .doc-spmenu {
   background: $primaryColor;
-}
-
-//for typography page
-.doc-spmenu-fixed {
-  position: fixed;
 }
 
 .doc-spmenu h3 {
@@ -42,12 +28,9 @@
   color: $primaryColor-font;
 }
 
-//for typography page
 .doc-spmenu-vertical {
   width: 240px;
   height: 100%;
-  top: 0;
-  z-index: 1000;
 }
 
 .doc-spmenu-vertical a {
@@ -55,31 +38,9 @@
   padding: 1em;
 }
 
-/* Vertical menu slides from the left  */
-
-.doc-spmenu-left {
-  left: -240px;
-}
-
-.doc-spmenu-left.doc-spmenu-open {
-  left: 0px;
-}
-
-/* Push classes applied to the body */
-
-.doc-spmenu-push {
-  //   overflow-x: hidden;
-  // goes - behind ; to lower layer
-  position: relative;
-  left: 0;
-}
-
 /* Transitions */
 
-.doc-spmenu,
-.doc-spmenu-push {
-  //   -webkit-transition: all 0.3s ease;
-  //   -moz-transition: all 0.3s ease;
+.doc-spmenu {
   transition: all 0.3s ease;
 }
 
@@ -93,9 +54,5 @@
   .doc-spmenu-vertical {
     font-size: 90%;
     width: 190px;
-  }
-
-  .doc-spmenu-left {
-    left: -190px;
   }
 }
