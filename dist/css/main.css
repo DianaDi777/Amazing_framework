@@ -52,13 +52,25 @@ h1 {
   line-height: 1.2;
 }
 
-.panel {
+.panel2 {
   background-color: #ffffff;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
   padding: 15px;
 }
 
-.panel .DL-btn {
+.panel {
+  background-color: #ffffff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  padding: 15px;
+  transform: translateZ(0);
+  transition: transform 0.25s ease-out;
+}
+
+.panel:hover, .panel:focus {
+  transform: scale(1.05);
+}
+
+.DL-btn {
   width: 100%;
   height: 100%;
   border-radius: 10px;
@@ -66,7 +78,7 @@ h1 {
   transition: opacity 0.15s ease-in;
 }
 
-.panel .DL-btn:hover, .panel .DL-btn:focus {
+.DL-btn:hover, .DL-btn:focus {
   opacity: 0.5;
   transition: opacity 0.15s ease-in;
   background-color: #d1d5ff;
@@ -905,6 +917,195 @@ nav ul .feat-show.show {
   .doc-SUBmenu-vertical {
     font-size: 90%;
     width: 190px;
+  }
+}
+
+.fragment {
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+.slider {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.slider .slider-items {
+  height: 100%;
+}
+
+.slider .slider-items .Oneitem {
+  height: 100%;
+  display: none;
+}
+
+.slider .slider-items .Oneitem.active {
+  display: flex;
+}
+
+.slider .slider-items .Oneitem .imgSlide {
+  max-width: 100%;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-position: center;
+  background-size: cover;
+  animation: zoom 1s linear forwards;
+}
+
+@keyframes zoom {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.05);
+  }
+}
+
+.slider .slider-items .Oneitem .captionSlide {
+  position: relative;
+  max-width: 1170px;
+  z-index: 10;
+  margin: auto;
+  flex-grow: 1;
+}
+
+.slider .slider-items .Oneitem .captionSlide h1 {
+  margin: 0;
+  font-size: 50px;
+  animation: text 1s ease forwards;
+}
+
+.slider .slider-items .Oneitem .captionSlide p {
+  margin: 10px 0 0;
+  font-size: 20px;
+  animation: text 1s ease forwards;
+  animation-delay: 0.5s;
+  opacity: 0;
+}
+
+@keyframes text {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.slider .controlsSlide .prevS,
+.slider .controlsSlide .nextS {
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  background-color: #383838;
+  border-radius: 50%;
+  z-index: 11;
+  top: 50%;
+  margin-top: -20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 40px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+}
+
+.slider .controlsSlide .prevS:hover,
+.slider .controlsSlide .nextS:hover {
+  background-color: #a1a9fe;
+}
+
+.slider .controlsSlide .prevS {
+  left: 30px;
+}
+
+.slider .controlsSlide .nextS {
+  right: 30px;
+}
+
+.slider .slide-info {
+  position: absolute;
+  width: 280px;
+  padding: 15px;
+  left: 30px;
+  bottom: 40px;
+  background-color: #ffffff;
+  padding-right: 50px;
+}
+
+.slider .slide-info .meterS {
+  height: 5px;
+  background-color: #ececec;
+  width: 100%;
+}
+
+.slider .slide-info .meterS .innerS {
+  width: 0px;
+  background-color: #a1a9fe;
+  transition: all 1s linear;
+  height: 5px;
+}
+
+.slider .slide-info .numberS {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  color: #383838;
+  height: 100%;
+  width: 35px;
+  text-align: center;
+  line-height: 35px;
+}
+
+@keyframes progressSlide {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+/*responsive*/
+@media (max-width: 1170px) {
+  .slider .slider-items .Oneitem .captionSlide {
+    padding: 15px 100px;
+  }
+}
+
+@media (max-width: 767px) {
+  .imgSlide {
+    max-width: 50%;
+    max-height: 50%;
+  }
+  .slider .controlsSlide .prevS {
+    left: 10px;
+  }
+  .slider .controlsSlide .prevS {
+    right: 10px;
+  }
+  .slider .slider-items .Oneitem .captionSlide {
+    padding: 15px 70px;
+  }
+  .slider .slider-items .Oneitem .captionSlide .textS h1 {
+    font-size: 30px;
+  }
+  .slider .slider-items .Oneitem .captionSlide .textS p {
+    font-size: 16px;
+  }
+  .controlsSlide .prevS,
+  .controlsSlide .nextS {
+    top: 80%;
+    margin-top: 20px;
+  }
+  .slide-info {
+    display: none;
   }
 }
 /*# sourceMappingURL=main.css.map */
