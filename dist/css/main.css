@@ -801,11 +801,11 @@ h1 {
   border: 1px dotted #333;
 }
 
-.doc-spmenu {
+.doc-SUBmenu {
   background: #a1a9fe;
 }
 
-.doc-spmenu h3 {
+.doc-SUBmenu h3 {
   color: #f4f4f4;
   font-size: 1.9em;
   padding: 20px;
@@ -814,41 +814,46 @@ h1 {
   background: #8187d8;
 }
 
-.doc-spmenu a {
+.doc-SUBmenu a {
   display: block;
   color: #f4f4f4;
   font-size: 1.1em;
   font-weight: 300;
 }
 
-.doc-spmenu a:hover {
+.doc-SUBmenu a:hover {
   background: #c6cbef;
   color: #f4f4f4;
 }
 
-.doc-spmenu a:active {
+.doc-SUBmenu a:active {
   background: #e9edfb;
   color: #8187d8;
 }
 
-.doc-spmenu-vertical {
+.doc-SUBmenu-vertical {
   width: 240px;
   height: 100%;
 }
 
-.doc-spmenu-vertical a {
+.doc-SUBmenu-vertical a {
   border-bottom: 1px solid #8187d8;
   padding: 1em;
 }
 
 /* Transitions */
-.doc-spmenu {
+.doc-SUBmenu {
   transition: all 0.3s ease;
+}
+
+.subMenuDoc li a {
+  background: #e9edfb;
+  color: #8187d8;
 }
 
 /*  Media queries */
 @media screen and (max-height: 26.375em) {
-  .doc-spmenu-vertical {
+  .doc-SUBmenu-vertical {
     font-size: 90%;
     width: 190px;
   }

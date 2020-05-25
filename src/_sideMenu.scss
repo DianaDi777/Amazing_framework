@@ -1,8 +1,8 @@
-.doc-spmenu {
+.doc-SUBmenu {
   background: $primaryColor;
 }
 
-.doc-spmenu h3 {
+.doc-SUBmenu h3 {
   color: $secWhite;
   font-size: 1.9em;
   padding: 20px;
@@ -11,37 +11,42 @@
   background: $primaryColor-font;
 }
 
-.doc-spmenu a {
+.doc-SUBmenu a {
   display: block;
   color: $secWhite;
   font-size: 1.1em;
   font-weight: 300;
 }
 
-.doc-spmenu a:hover {
+.doc-SUBmenu a:hover {
   background: $button-hover;
   color: $secWhite;
 }
 
-.doc-spmenu a:active {
+.doc-SUBmenu a:active {
   background: $button-active;
   color: $primaryColor-font;
 }
 
-.doc-spmenu-vertical {
+.doc-SUBmenu-vertical {
   width: 240px;
   height: 100%;
 }
 
-.doc-spmenu-vertical a {
+.doc-SUBmenu-vertical a {
   border-bottom: 1px solid $primaryColor-font;
   padding: 1em;
 }
 
 /* Transitions */
 
-.doc-spmenu {
+.doc-SUBmenu {
   transition: all 0.3s ease;
+}
+
+.subMenuDoc li a {
+  background: $button-active;
+  color: $primaryColor-font;
 }
 
 /*  Media queries */
@@ -51,7 +56,7 @@
 // }
 
 @media screen and (max-height: 26.375em) {
-  .doc-spmenu-vertical {
+  .doc-SUBmenu-vertical {
     font-size: 90%;
     width: 190px;
   }

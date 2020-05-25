@@ -9,8 +9,8 @@ $(document).ready(function () {
       var $desc = $("#docDesciption");
 
       switch ($(this).attr("href")) {
-        case "00.html":
-          $desc.load("typo.html");
+        case "01.html":
+          $desc.load("type.html");
           break;
         case "01.html":
           $desc.load("../data/turtle.html");
