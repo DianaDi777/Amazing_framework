@@ -49,6 +49,35 @@
   color: $primaryColor-font;
 }
 
+nav ul li a span.spanDROP {
+  //   position: absolute;
+  //   top: 50%;
+  //   right: 20px;
+
+  font-size: 22px;
+  transition: transform 0.4s;
+  transform: translateY(-10%);
+}
+nav ul li a span.rotate {
+  transform: translateY(-10%) rotate(-180deg);
+}
+
+nav ul li.active a {
+  background: $button-active;
+  color: $primaryColor-font;
+}
+
+// nav ul li a:hover span.spanMenu {
+//   transform: translateY(-10%) rotate(-180deg);
+// }
+
+nav ul ul {
+  display: none;
+}
+nav ul .feat-show.show {
+  display: block;
+}
+
 /*  Media queries */
 
 // @media screen and (max-width: 55.1875em) {
