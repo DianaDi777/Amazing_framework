@@ -71,10 +71,12 @@ h1 {
 }
 
 .DL-btn {
-  width: 100%;
-  height: 100%;
+  position: absolute;
+  top: 700px;
+  left: 570px;
   border-radius: 10px;
   opacity: 1;
+  display: inline-block;
   transition: opacity 0.15s ease-in;
 }
 
@@ -82,6 +84,10 @@ h1 {
   opacity: 0.5;
   transition: opacity 0.15s ease-in;
   background-color: #d1d5ff;
+}
+
+.DL-btn:active {
+  background-color: #a1a9fe;
 }
 
 #header2 {
