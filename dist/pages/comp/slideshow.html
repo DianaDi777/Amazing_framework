@@ -2,84 +2,217 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Slide Show</title>
+    <title>Typographu-Amazing Framework</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+    />
     <link
       href="https://fonts.googleapis.com/css?family=Dosis"
       rel="stylesheet"
     />
-    <link href="../../css/main.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="../../css/main.css" />
+    <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?lang=html&amp;skin=default"></script>
   </head>
   <body>
-    <div class="fragment all-sides-ma-0">
-      <!--fragment-->
-      <div class="slider">
-        <div class="slider-items">
-          <div class="Oneitem active">
-            <div
-              class="imgSlide"
-              style="background-image: url('../../images/2.png');"
-              ;
-            ></div>
-            <div class="captionSlide">
-              <div class="textS">
-                <h1>Name of the business</h1>
-                <p>Description of the vendor</p>
-              </div>
-            </div>
-          </div>
-          <div class="Oneitem">
-            <div
-              class="imgSlide"
-              style="background-image: url('../../images/4.png');"
-              ;
-            ></div>
-            <div class="captionSlide">
-              <div class="textS">
-                <h1>Name of the business</h1>
-                <p>Description of the vendor</p>
-              </div>
-            </div>
-          </div>
-          <div class="Oneitem">
-            <div
-              class="imgSlide"
-              style="background-image: url('../../images/5.png');"
-              ;
-            ></div>
-            <div class="captionSlide all-sides-pa-3">
-              <div class="textS">
-                <h1>Name of the business</h1>
-                <p>Description of the vendor</p>
-              </div>
-            </div>
-          </div>
+    <div class="panel2" id="header2">
+      <!-- NAV-BAR -->
+      <div class="nav-bar" id="menu-buttons">
+        <div class="button"><a href="../../index.html">Home</a></div>
+        <div class="button selected">
+          <a href="../doc.html">Documentation</a>
         </div>
-
-        <!-- Slider controls -->
-
-        <div class="controlsSlide">
-          <div class="prevS">&lt;</div>
-          <div class="nextS">&gt;</div>
-        </div>
-
-        <!-- /Slider controls  -->
-
-        <!--Slide info-->
-        <div class="slide-info">
-          <div class="meterS">
-            <div class="innerS"></div>
-          </div>
-          <div class="numberS"></div>
-        </div>
-        <!--/Slide info-->
-
-        <!--Next slide progress meter-->
-        <div class="progressSlide"></div>
-        <!--/Next slide progress meter-->
+        <div class="button"><a href="../components.html">Components</a></div>
+        <div class="button"><a href="../examples.html">Examples</a></div>
       </div>
-      <script src="../../script/slideShow.js"></script>
     </div>
-    <!--/fragment-->
+
+    <div id="content">
+      <!-- ICON 'BACK' -->
+      <div class="top-bar">
+        <div class="title all-sides-pa-3">
+          <a href="../components.html"
+            ><span class="fa fa-arrow-alt-circle-left fa-2x Main-blue"></span
+          ></a>
+        </div>
+      </div>
+      <!-- section #1 TITLE -->
+      <section class="all-sides-pa-4">
+        <h1 class="text-center font-3 Sm-font-2 Med-font-1 fontW-2 ma-RL-1">
+          SLIDESHOW
+        </h1>
+        <h2 class="text-center font-5 Sm-font-4 Med-font-3 lHeight-copy">
+          Full screen slideshow for header
+        </h2>
+      </section>
+      <!-- /section  TITLE -->
+
+      <!-- section #2 DISPLAY -->
+      <div class="fragment all-sides-ma-0">
+        <div class="slider">
+          <div class="slider-items">
+            <div class="Oneitem active">
+              <div
+                class="imgSlide"
+                style="background-image: url('../../images/2.png');"
+                ;
+              ></div>
+              <div class="captionSlide">
+                <div class="textS Main-black">
+                  <h1>Name of the business</h1>
+                  <p>Description of the vendor</p>
+                </div>
+              </div>
+            </div>
+            <div class="Oneitem">
+              <div
+                class="imgSlide"
+                style="background-image: url('../../images/4.png');"
+                ;
+              ></div>
+              <div class="captionSlide">
+                <div class="textS Main-black">
+                  <h1>Name of the business</h1>
+                  <p>Description of the vendor</p>
+                </div>
+              </div>
+            </div>
+            <div class="Oneitem">
+              <div
+                class="imgSlide"
+                style="background-image: url('../../images/5.png');"
+                ;
+              ></div>
+              <div class="captionSlide all-sides-pa-3">
+                <div class="textS Main-black">
+                  <h1>Name of the business</h1>
+                  <p>Description of the vendor</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slider controls -->
+
+          <div class="controlsSlide">
+            <div class="prevS">&lt;</div>
+            <div class="nextS">&gt;</div>
+          </div>
+
+          <!-- /Slider controls  -->
+
+          <!--Slide info-->
+          <div class="slide-info">
+            <div class="meterS">
+              <div class="innerS"></div>
+            </div>
+            <div class="numberS"></div>
+          </div>
+          <!--/Slide info-->
+
+          <!--Next slide progress meter-->
+          <div class="progressSlide"></div>
+          <!--/Next slide progress meter-->
+        </div>
+
+        <script src="../../script/slideShow.js"></script>
+      </div>
+      <!-- /section #2 DISPLAY -->
+
+      <!-- section #3 discription -->
+      <div class="font-3 all-sides-pa-4 text-center">
+        <p>
+          If you want to implement slideshow you can use this HTML.
+          <br />Additionaly download our framework filles and link it into your
+          HTML file .
+        </p>
+        <button>download</button>
+      </div>
+      <!-- /section #3 end-->
+
+      <!-- section #4 CODE-->
+      <article
+        class="b-dotted b-light-gray all-sides-ma-4 all-sides-pa-2 font-4"
+      >
+        <pre class="prettyprint" style="border: none !important;"><code>
+     <!-- &lt;&gt; use this symbols insted < and > -->
+     // three images
+
+       &lt;div class="fragment all-sides-ma-0"&gt;
+        &lt;div class="slider"&gt;
+          &lt;div class="slider-items"&gt;
+          // first image
+            &lt;div class="Oneitem active"&gt;
+              &lt;div
+                class="imgSlide"
+                style="background-image: url('YOU_IMAGE_NAME.png');"
+                ;
+              &gt;&lt;/div&gt;
+              &lt;div class="captionSlide"&gt;
+                &lt;div class="textS Main-black"&gt;
+                  &lt;h1&gt;Name of the business&lt;/h1&gt;
+                  &lt;p&gt;Description of the vendor&lt;/p&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+            // second image
+            &lt;div class="Oneitem"&gt;
+              &lt;div
+                class="imgSlide"
+                style="background-image: url('YOU_IMAGE_NAME.png');"
+                ;
+              &gt;&lt;/div&gt;
+              &lt;div class="captionSlide"&gt;
+                &lt;div class="textS"&gt;
+                  &lt;h1&gt;Name of the business&lt;/h1&gt;
+                  &lt;p&gt;Description of the vendor&lt;/p&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+            // third image
+            &lt;div class="Oneitem"&gt;
+              &lt;div
+                class="imgSlide"
+                style="background-image: url('YOU_IMAGE_NAME.png');"
+                ;
+              &gt;&lt;/div&gt;
+              &lt;div class="captionSlide all-sides-pa-3"&gt;
+                &lt;div class="textS"&gt;
+                  &lt;h1&gt;Name of the business&lt;/h1&gt;
+                  &lt;p&gt;Description of the vendor&lt;/p&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+
+          //Slider controls 
+          &lt;div class="controlsSlide"&gt;
+            &lt;div class="prevS"&gt;&lt;&lt;/div&gt;
+            &lt;div class="nextS"&gt;&gt;&lt;/div&gt;
+          &lt;/div&gt;
+         
+          //Slide info
+          &lt;div class="slide-info"&gt;
+            &lt;div class="meterS"&gt;
+              &lt;div class="innerS"&gt;&lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="numberS"&gt;&lt;/div&gt;
+          &lt;/div&gt;
+         
+          // Next slide progress meter
+          &lt;div class="progressSlide"&gt;&lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+  </code></pre>
+      </article>
+
+      <!-- /section #4 CODE -->
+    </div>
   </body>
 </html>
