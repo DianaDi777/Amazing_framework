@@ -145,6 +145,11 @@
 }
 
 /*responsive*/
+@media (max-width: 1700px) {
+  .slider .slider-items .Oneitem .captionSlide {
+    padding: 50px 200px;
+  }
+}
 
 @media (max-width: 1170px) {
   .slider .slider-items .Oneitem .captionSlide {
@@ -172,6 +177,7 @@
   }
   .slider .slider-items .Oneitem .captionSlide {
     padding: 15px 70px;
+    margin: 50% 40px;
     .textS h1 {
       font-size: 30px;
     }
@@ -179,11 +185,11 @@
       font-size: 16px;
     }
   }
-  .controlsSlide {
+  .slider .controlsSlide {
     .prevS,
     .nextS {
-      top: 80%;
-      margin-top: 20px;
+      top: 50%;
+      margin-top: -90px;
     }
   }
   .slide-info {
