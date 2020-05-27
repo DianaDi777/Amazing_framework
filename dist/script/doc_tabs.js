@@ -4,8 +4,6 @@ $(document).ready(function () {
     .on("click", function (e) {
       e.preventDefault();
 
-      //   $("#critterDesciption").load("../data/turtle.html");
-
       var $desc = $("#docDesciption");
 
       switch ($(this).attr("href")) {
@@ -13,20 +11,20 @@ $(document).ready(function () {
           $desc.load("type.html");
           break;
         case "01.html":
-          $desc.load("../data/turtle.html");
+          $desc.load("../icons.html");
           break;
 
         case "02.html":
-          $desc.load("../data/shark.html");
+          $desc.load("../icons.html");
           break;
         case "03.html":
-          $desc.load("../data/seal.html");
+          $desc.load("../icons.html");
           break;
         case "03.html":
-          $desc.load("../data/seal.html");
+          $desc.load("../.html");
           break;
         case "03.html":
-          $desc.load("../data/seal.html");
+          $desc.load("../.html");
           break;
         case "06.html":
           $desc.load("doc/icons.html");
