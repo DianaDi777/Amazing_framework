@@ -10,7 +10,7 @@ $(document).ready(function () {
         case "01.html":
           $desc.load("type.html");
           break;
-        case "01.html":
+        case "00.html":
           $desc.load("../icons.html");
           break;
 

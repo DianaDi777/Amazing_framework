@@ -34,3 +34,26 @@ $font-main: "Dosis", Helvetica, sans-serif;
 .primDark {
   color: darken($primaryColor, $amount: 10%);
 }
+
+// shopping cart sass
+
+$mainTransition: all 0.3s linear;
+$mainSpacing: 0.1rem;
+
+//Product info
+
+$pink: #ed8cc7;
+$yellow: #ffe57b;
+$green: #81e4e8;
+$greenOPAC: #a9edef;
+
+$under-line: #dadada;
+// FORM : body
+$formGray: #616060;
+
+$hamburgerMenu: #19d5a5;
+$navbarBackground: #a7d7c7;
+$header: #19d5a5;
+//
+//shoping cart example
+$primaryGREEN: #309c32;
