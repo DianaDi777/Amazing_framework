@@ -259,6 +259,9 @@ h1 {
   }   // end of .tab .list
 }     // end of content
 
+
+// formats download button for various screen sizes: 
+
 @media screen and (max-width: 883px) {
   .DL-btn {
     top: 67.5%; 
@@ -290,4 +293,39 @@ h1 {
     height: 25%;
     font-size: 1rem !important; 
   }
+}
+
+// formats header for mobile: 
+
+@media screen and (max-width: 500px){
+
+  #header {
+      width: 110%;
+      height: 140px;
+      margin: 0 auto;
+      margin-bottom: 4rem;
+
+  }
+  #header .nav-bar {
+     display: block;
+     width: 50%;
+     margin: 0 auto;
+  }
+
+  #header .picture {
+    height: 144px;
+  }
+
+  #content {
+    width: 105%;
+  }
+
+  .top-bar {
+    margin-top: 8rem;
+  }
+
+  #content .tab .title {
+    flex: 1;
+  }
+
 }

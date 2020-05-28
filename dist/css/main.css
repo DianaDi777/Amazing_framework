@@ -285,6 +285,32 @@ h1 {
   }
 }
 
+@media screen and (max-width: 500px) {
+  #header {
+    width: 110%;
+    height: 140px;
+    margin: 0 auto;
+    margin-bottom: 4rem;
+  }
+  #header .nav-bar {
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+  }
+  #header .picture {
+    height: 144px;
+  }
+  #content {
+    width: 105%;
+  }
+  .top-bar {
+    margin-top: 8rem;
+  }
+  #content .tab .title {
+    flex: 1;
+  }
+}
+
 .ital {
   font-style: italic;
 }
