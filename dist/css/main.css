@@ -13,8 +13,7 @@
   box-sizing: border-box;
 }
 
-html,
-body {
+html, body {
   width: 100%;
   /*height: 100%;*/
   margin: 0;
@@ -42,10 +41,7 @@ ul {
   list-style: none;
 }
 
-h1,
-h2,
-h3,
-h4 {
+h1, h2, h3, h4 {
   text-transform: uppercase;
 }
 
@@ -72,10 +68,16 @@ h1 {
   transform: scale(1.05);
 }
 
+.relative {
+  position: relative;
+}
+
 .DL-btn {
   position: absolute;
-  top: 700px;
-  left: 570px;
+  top: 70%;
+  left: 37.5%;
+  width: 30%;
+  height: 15%;
   border-radius: 10px;
   opacity: 1;
   display: inline-block;
@@ -251,6 +253,74 @@ h1 {
   height: 30px;
   margin-right: 5px;
   border-radius: 30px;
+}
+
+@media screen and (max-width: 883px) {
+  .DL-btn {
+    top: 67.5%;
+    left: 37.5%;
+    padding: 0.5rem !important;
+    width: 30%;
+    height: 20%;
+    font-size: 1.25rem !important;
+  }
+}
+
+@media screen and (max-width: 569px) {
+  .DL-btn {
+    top: 67.5%;
+    left: 35%;
+    padding: 0.25rem !important;
+    width: 35%;
+    height: 20%;
+    font-size: 1.25rem !important;
+  }
+}
+
+@media screen and (max-width: 415px) {
+  .DL-btn {
+    top: 65%;
+    left: 35%;
+    padding: 0.25rem !important;
+    width: 35%;
+    height: 25%;
+    font-size: 1rem !important;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  body {
+    width: 100%;
+  }
+  #header {
+    width: 110%;
+    height: 140px;
+    margin: 0 auto;
+    margin-bottom: 4rem;
+  }
+  #header .nav-bar {
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+  }
+  #header .picture {
+    height: 144px;
+  }
+  #content {
+    width: 105%;
+  }
+  .top-bar {
+    margin-top: 8rem;
+  }
+  #content .tab .search-bar {
+    margin-right: 0.5rem;
+  }
+  #content .tab .title {
+    flex: 1;
+  }
+  #content .tab .list {
+    justify-content: center;
+  }
 }
 
 .ital {
@@ -1928,5 +1998,30 @@ nav ul .feat-show.show {
 
 .descriptionPI {
   padding: 10px 0 !important;
+}
+
+@media screen and (max-width: 700px) {
+  .displayCode {
+    max-width: 90%;
+    margin: 0.5rem;
+    font-size: 11px;
+    border: none;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #header2 {
+    padding-top: 0.5rem;
+    width: 110%;
+    height: 140px;
+  }
+  #header2 .nav-bar {
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+  }
+  .BTN-2 {
+    transform: scale(0.75);
+  }
 }
 /*# sourceMappingURL=main.css.map */

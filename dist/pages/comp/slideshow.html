@@ -21,15 +21,27 @@
     <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?lang=html&amp;skin=default"></script>
   </head>
   <body>
+
     <div class="panel2" id="header2">
       <!-- NAV-BAR -->
       <div class="nav-bar" id="menu-buttons">
-        <div class="button"><a href="../../index.html">Home</a></div>
+
+        <div class="button">
+          <a href="../../index.html">Home</a>
+        </div>
+
         <div class="button selected">
           <a href="../doc.html">Documentation</a>
         </div>
-        <div class="button"><a href="../components.html">Components</a></div>
-        <div class="button"><a href="../examples.html">Examples</a></div>
+
+        <div class="button">
+          <a href="../components.html">Components</a>
+        </div>
+
+        <div class="button">
+          <a href="../examples.html">Examples</a>
+        </div>
+
       </div>
     </div>
 
@@ -42,6 +54,7 @@
           ></a>
         </div>
       </div>
+
       <!-- section #1 TITLE -->
       <section class="all-sides-pa-4">
         <h1 class="text-center font-3 Sm-font-2 Med-font-1 fontW-2 ma-RL-1">
@@ -64,7 +77,7 @@
 
       <!-- /section #2 DISPLAY -->
 
-      <!-- section #3 discription -->
+      <!-- section #3 description -->
       <div class="font-3 all-sides-pa-4 text-center">
         <p>
           If you want to implement slideshow you can use this HTML.
@@ -77,81 +90,81 @@
 
       <!-- section #4 CODE-->
       <article
-        class="b-dotted b-light-gray all-sides-ma-4 all-sides-pa-2 font-4"
+        class=" displayCode b-dotted b-light-gray all-sides-ma-4 all-sides-pa-2 font-4"
       >
-        <pre class="prettyprint" style="border: none !important;"><code>
-     <!-- &lt;&gt; use this symbols insted < and > -->
-     // three images
+        <pre style = "white-space: pre-wrap" class="prettyprint" style="border: none !important;">
+          <code>
+        <!-- &lt;&gt; use this symbols insted < and > -->
+        // three images
 
-       &lt;div class="fragment all-sides-ma-0"&gt;
-        &lt;div class="slider"&gt;
-          &lt;div class="slider-items"&gt;
-          // first image
-            &lt;div class="Oneitem active"&gt;
-              &lt;div
-                class="imgSlide"
-                style="background-image: url('YOU_IMAGE_NAME.png');"
-                ;
-              &gt;&lt;/div&gt;
-              &lt;div class="captionSlide"&gt;
-                &lt;div class="textS Main-black"&gt;
-                  &lt;h1&gt;Name of the business&lt;/h1&gt;
-                  &lt;p&gt;Description of the vendor&lt;/p&gt;
+          &lt;div class="fragment all-sides-ma-0"&gt;
+            &lt;div class="slider"&gt;
+              &lt;div class="slider-items"&gt;
+              // first image
+                &lt;div class="Oneitem active"&gt;
+                  &lt;div
+                    class="imgSlide"
+                    style="background-image: url('File.png');"
+                  &gt;&lt;/div&gt;
+                  &lt;div class="captionSlide"&gt;
+                    &lt;div class="textS Main-black"&gt;
+                      &lt;h1&gt;Name of the business&lt;/h1&gt;
+                      &lt;p&gt;Description of the vendor&lt;/p&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+                // second image
+                &lt;div class="Oneitem"&gt;
+                  &lt;div
+                    class="imgSlide"
+                    style="background-image: url('File.png');"
+                  &gt;&lt;/div&gt;
+                  &lt;div class="captionSlide"&gt;
+                    &lt;div class="textS"&gt;
+                      &lt;h1&gt;Name of the business&lt;/h1&gt;
+                      &lt;p&gt;Description of the vendor&lt;/p&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+                // third image
+                &lt;div class="Oneitem"&gt;
+                  &lt;div
+                    class="imgSlide"
+                    style="background-image: url('File.png');"
+                  &gt;&lt;/div&gt;
+                  &lt;div class="captionSlide all-sides-pa-3"&gt;
+                    &lt;div class="textS"&gt;
+                      &lt;h1&gt;Name of the business&lt;/h1&gt;
+                      &lt;p&gt;Description of the vendor&lt;/p&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
                 &lt;/div&gt;
               &lt;/div&gt;
-            &lt;/div&gt;
-            // second image
-            &lt;div class="Oneitem"&gt;
-              &lt;div
-                class="imgSlide"
-                style="background-image: url('YOU_IMAGE_NAME.png');"
-                ;
-              &gt;&lt;/div&gt;
-              &lt;div class="captionSlide"&gt;
-                &lt;div class="textS"&gt;
-                  &lt;h1&gt;Name of the business&lt;/h1&gt;
-                  &lt;p&gt;Description of the vendor&lt;/p&gt;
-                &lt;/div&gt;
-              &lt;/div&gt;
-            &lt;/div&gt;
-            // third image
-            &lt;div class="Oneitem"&gt;
-              &lt;div
-                class="imgSlide"
-                style="background-image: url('YOU_IMAGE_NAME.png');"
-                ;
-              &gt;&lt;/div&gt;
-              &lt;div class="captionSlide all-sides-pa-3"&gt;
-                &lt;div class="textS"&gt;
-                  &lt;h1&gt;Name of the business&lt;/h1&gt;
-                  &lt;p&gt;Description of the vendor&lt;/p&gt;
-                &lt;/div&gt;
-              &lt;/div&gt;
-            &lt;/div&gt;
-          &lt;/div&gt;
 
-          //Slider controls 
-          &lt;div class="controlsSlide"&gt;
-            &lt;div class="prevS"&gt;&lt;&lt;/div&gt;
-            &lt;div class="nextS"&gt;&gt;&lt;/div&gt;
-          &lt;/div&gt;
-         
-          //Slide info
-          &lt;div class="slide-info"&gt;
-            &lt;div class="meterS"&gt;
-              &lt;div class="innerS"&gt;&lt;/div&gt;
+              //Slider controls 
+              &lt;div class="controlsSlide"&gt;
+                &lt;div class="prevS"&gt;&lt;&lt;/div&gt;
+                &lt;div class="nextS"&gt;&gt;&lt;/div&gt;
+              &lt;/div&gt;
+            
+              //Slide info
+              &lt;div class="slide-info"&gt;
+                &lt;div class="meterS"&gt;
+                  &lt;div class="innerS"&gt;&lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class="numberS"&gt;&lt;/div&gt;
+              &lt;/div&gt;
+            
+              // Next slide progress meter
+              &lt;div class="progressSlide"&gt;&lt;/div&gt;
             &lt;/div&gt;
-            &lt;div class="numberS"&gt;&lt;/div&gt;
           &lt;/div&gt;
-         
-          // Next slide progress meter
-          &lt;div class="progressSlide"&gt;&lt;/div&gt;
-        &lt;/div&gt;
-      &lt;/div&gt;
-  </code></pre>
+          </code>
+        </pre>
       </article>
 
       <!-- /section #4 CODE -->
+
     </div>
   </body>
 </html>
