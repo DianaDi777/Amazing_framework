@@ -1,0 +1,25 @@
+@media screen and (max-width: 700px){
+    .displayCode {
+        max-width: 90%;
+        margin: 0.5rem;
+        font-size: 11px;
+        border: none;
+    }
+}
+
+@media screen and (max-width: 500px){
+    #header2 {
+        padding-top: 0.5rem;
+        width: 110%;
+        height: 140px;
+    }
+    #header2 .nav-bar {
+       display: block;
+       width: 50%;
+       margin: 0 auto;
+    }
+
+    .BTN-2 {
+        transform: scale(0.75);
+    }
+}
