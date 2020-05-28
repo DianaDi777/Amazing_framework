@@ -20,7 +20,7 @@ body {
   background-color: $background-color;
   color: $body-font;
   font-family: $font-main;
-  // width: 80%;
+  width: 80%;
   /* height: 100%; */
   margin: auto;
 }
@@ -298,6 +298,9 @@ h1 {
 // formats header for mobile: 
 
 @media screen and (max-width: 500px){
+  body {
+    width: 100%;
+  }
 
   #header {
       width: 110%;

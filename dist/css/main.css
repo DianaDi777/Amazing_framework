@@ -28,6 +28,7 @@ body {
   background-color: #fafafa;
   color: #808080;
   font-family: "Dosis", Helvetica, sans-serif;
+  width: 80%;
   /* height: 100%; */
   margin: auto;
 }
@@ -286,6 +287,9 @@ h1 {
 }
 
 @media screen and (max-width: 500px) {
+  body {
+    width: 100%;
+  }
   #header {
     width: 110%;
     height: 140px;
