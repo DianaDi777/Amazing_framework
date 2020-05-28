@@ -306,8 +306,14 @@ h1 {
   .top-bar {
     margin-top: 8rem;
   }
+  #content .tab .search-bar {
+    margin-right: 0.5rem;
+  }
   #content .tab .title {
     flex: 1;
+  }
+  #content .tab .list {
+    justify-content: center;
   }
 }
 

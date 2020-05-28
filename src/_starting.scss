@@ -312,6 +312,7 @@ h1 {
      margin: 0 auto;
   }
 
+
   #header .picture {
     height: 144px;
   }
@@ -320,12 +321,22 @@ h1 {
     width: 105%;
   }
 
+  // formats "welcome to our framework" text
   .top-bar {
     margin-top: 8rem;
   }
 
+  #content .tab .search-bar {
+    margin-right: 0.5rem;
+  }
+
+  // formats "welcome to our framework" text
   #content .tab .title {
     flex: 1;
+  }
+
+  #content .tab .list {
+    justify-content: center;
   }
 
 }
