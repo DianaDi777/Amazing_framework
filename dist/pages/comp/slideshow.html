@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Typographu-Amazing Framework</title>
+    <title>Slideshow-Amazing Framework</title>
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
@@ -20,12 +20,10 @@
     <link rel="stylesheet" href="../../css/main.css" />
     <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?lang=html&amp;skin=default"></script>
   </head>
-  <body>
-
+  <body style="background-color: white;">
     <div class="panel2" id="header2">
       <!-- NAV-BAR -->
       <div class="nav-bar" id="menu-buttons">
-
         <div class="button">
           <a href="../../index.html">Home</a>
         </div>
@@ -41,7 +39,6 @@
         <div class="button">
           <a href="../examples.html">Examples</a>
         </div>
-
       </div>
     </div>
 
@@ -79,10 +76,25 @@
 
       <!-- section #3 description -->
       <div class="font-3 all-sides-pa-4 text-center">
-        <p>
-          If you want to implement slideshow you can use this HTML.
-          <br />Additionaly download our framework filles and link it into your
-          HTML file .
+        <h3>FUNCTIONALITY</h3>
+        <p class="text-left">
+          JS will: <br />
+          (a) listen for a user click on arrow-key to go to the next slide.
+          <br />
+          (b) autoplay slides when the page is loaded. It stops the autoplay
+          when a user clicks the arrow-key. It starts autoplay if a user is not
+          clicking arrow-key anymore. <br />
+          (c) create an info bar that will show how many slides there are and
+          which one is currently playing. <br />
+          (d) create a ticker at the top of the slideshow to present how long in
+          the current slide will appear on the screen. <br />
+          CSS will: <br />
+          (a) zoom in on a picture when it appears on the screen <br />
+          (b) provide some animation for a smooth color transition when a user
+          hovers on the arrow button and other transitions. <br />
+         
+          <span class="ital">* This slide show does not display on medium and small screens</span>
+          <p class="text-center Sec-blue">Download our framework filles and link it into your file.</p>
         </p>
         <button class="BTN-2 font-3 up all-sides-ma-3">download</button>
       </div>
@@ -90,9 +102,13 @@
 
       <!-- section #4 CODE-->
       <article
-        class=" displayCode b-dotted b-light-gray all-sides-ma-4 all-sides-pa-2 font-4"
+        class="displayCode b-dotted b-light-gray all-sides-ma-4 all-sides-pa-2 font-4"
       >
-        <pre style = "white-space: pre-wrap" class="prettyprint" style="border: none !important;">
+        <pre
+          style="white-space: pre-wrap;"
+          class="prettyprint"
+          style="border: none !important;"
+        >
           <code>
         <!-- &lt;&gt; use this symbols insted < and > -->
         // three images
@@ -164,7 +180,6 @@
       </article>
 
       <!-- /section #4 CODE -->
-
     </div>
   </body>
 </html>
