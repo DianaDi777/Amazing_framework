@@ -8,16 +8,7 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
     <style>
-      /* textarea {
-          width: 50vw;
-          height: 100vh;
-        } */
-      /* section {
-        display: flex;
-      } */
-      /* div {
-          border: 1px solid #333;
-        } */
+      
       .borderFix {
         border: 1px dotted #333 !important;
       }
@@ -42,46 +33,10 @@
     <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?lang=html&amp;skin=default"></script>
   </head>
   <body>
-    <div class="panel" id="header">
-      <div class="picture"></div>
+   
 
-      <!-- MAIN MENU -->
-      <div class="nav-bar" id="menu-buttons">
-        <div class="button"><a href="../../index.html">Home</a></div>
-        <div class="button selected">
-          <a href="../doc.html">Documentation</a>
-        </div>
-        <div class="button"><a href="../components.html">Components</a></div>
-        <div class="button"><a href="../examples.html">Examples</a></div>
-      </div>
-    </div>
-    <!-- /MAIN MENU -->
-    <!--content -->
-    <div id="content" class="pa-3 clearFix" style="display: flex;">
-      <!-- Side menu -->
-      <div class="doc-SUBmenu-push up">
-        <nav
-          class="doc-SUBmenu doc-SUBmenu-vertical doc-SUBmenu-left doc-SUBmenu-open"
-          id="doc-SUBmenu-s1 docTabs"
-        >
-          <h3>Doc</h3>
-          <a href="typography2.html">Typography</a>
-          <a href="01.html">Tables</a>
-          <a href="02.html">Forms</a>
-          <a href="03.html">Buttons</a>
-          <a href="flex.html">Floats</a>
-          <a href="05.html">Grid </a>
-          <a href="icons2.html">Icons</a>
-          <a href="07.html">Images</a>
-          <a href="08.html">No Print</a>
-          <a href="09.html">Reset library</a>
-        </nav>
-      </div>
-      <!-- / Side menu -->
 
-      <!-- Tab content-->
-
-      <section>
+      <section class="all-sides-ma-4" >
         <article class="">
           <div
             class="clearFix MaxW all-sides-pa-4 all-sides-ma-4 b-dotted b-light-gray"
@@ -90,10 +45,11 @@
               with class=<span style="text-transform: none;"> "clearFix"</span>
             </h1>
             <img
-              src="../../images/imageEx.png"
+              src="../images/imageEx.png"
               width="150"
               height="150"
-              class="float-l"
+              alt="clearFIX"
+              class="float-r"
             />
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem
@@ -102,17 +58,53 @@
             </p>
           </div>
 
-          <div class="MaxW all-sides-pa-4 all-sides-ma-4 b-dotted b-light-gray">
+          <div class="MaxW all-sides-pa-4 all-sides-ma-4 b-dotted b-light-gray ">
             <h1>
               without class=<span style="text-transform: none;">
-                "clearFix"</span
-              >
+                "clearFix"</span>
             </h1>
             <img
-              src="../../images/imageEx.png"
+              src="../images/imageEx.png"
+              width="150"
+              height="150"
+              class="float-r"
+              alt="no_clearFIX"
+            />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem
+              ipsum dolor sit amet consectetur adipisicing elit. Placeat, quas
+              itaque nostrum
+            </p>
+          </div>
+          <div class="MaxW all-sides-pa-4 all-sides-ma-4 b-dotted b-light-gray clearFix">
+            <h1>
+              float element to the left with class=<span style="text-transform: none;">
+                "float-l"</span>
+            </h1>
+            <img
+              src="../images/float-l.jpg"
               width="150"
               height="150"
               class="float-l"
+              alt="no_clearFIX"
+            />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem
+              ipsum dolor sit amet consectetur adipisicing elit. Placeat, quas
+              itaque nostrum
+            </p>
+          </div>
+          <div class="MaxW all-sides-pa-4 all-sides-ma-4 b-dotted b-light-gray clearFix">
+            <h1>
+              float element to the right with class=<span style="text-transform: none;">
+                "float-r"</span>
+            </h1>
+            <img
+              src="../images/floar-r1.jpg"
+              width="150"
+              height="150"
+              class="float-r"
+              alt="no_clearFIX"
             />
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem
@@ -138,6 +130,8 @@
             You can discribe your product here and let the picture to floar right or left. -->
                       </code></pre>
         </article>
+
+
       </section>
     </div>
     <!--/content -->
