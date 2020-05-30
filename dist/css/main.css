@@ -75,7 +75,7 @@ h1 {
 .DL-btn {
   position: absolute;
   top: 70%;
-  left: 37.5%;
+  left: 33%;
   width: 30%;
   height: 15%;
   border-radius: 10px;
@@ -258,7 +258,7 @@ h1 {
 @media screen and (max-width: 883px) {
   .DL-btn {
     top: 67.5%;
-    left: 37.5%;
+    left: 33%;
     padding: 0.5rem !important;
     width: 30%;
     height: 20%;
@@ -269,7 +269,7 @@ h1 {
 @media screen and (max-width: 569px) {
   .DL-btn {
     top: 67.5%;
-    left: 35%;
+    left: 31%;
     padding: 0.25rem !important;
     width: 35%;
     height: 20%;
@@ -280,7 +280,7 @@ h1 {
 @media screen and (max-width: 415px) {
   .DL-btn {
     top: 65%;
-    left: 35%;
+    left: 30%;
     padding: 0.25rem !important;
     width: 35%;
     height: 25%;
