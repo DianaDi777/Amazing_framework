@@ -75,6 +75,7 @@ h1 {
 
 .DL-btn {
   position: absolute;
+  font-size: 2.9rem !important;
   top: 70%;
   left: 33%;
   width: 30%;
@@ -256,6 +257,12 @@ h1 {
   border-radius: 30px;
 }
 
+@media screen and (min-width: 883px) and (max-width: 1024px) {
+  .DL-btn {
+    font-size: 1.5rem !important;
+  }
+}
+
 @media screen and (max-width: 883px) {
   .DL-btn {
     top: 67.5%;
@@ -307,11 +314,14 @@ h1 {
   #header .picture {
     height: 144px;
   }
+  div.title {
+    display: none;
+  }
   #content {
     width: 105%;
   }
   .top-bar {
-    margin-top: 8rem;
+    margin-top: 6.5rem;
   }
   .slideshow-top {
     margin-top: 0.1rem;
@@ -1143,7 +1153,7 @@ nav ul .feat-show.show {
   }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 768px) {
   .docContent {
     display: block;
   }

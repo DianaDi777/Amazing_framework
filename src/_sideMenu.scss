@@ -148,7 +148,8 @@ nav ul .feat-show.show {
 }
 
 // mobile
-@media screen and (max-width: 375px ) {
+@media screen and (max-width: 768px ) {
+// @media screen and (max-width: 375px ) {
 
   // documentation page: all content below navbar
   .docContent {

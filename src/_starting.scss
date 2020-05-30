@@ -70,17 +70,12 @@ h1 {
 }
 
 .DL-btn {
- 
   position: absolute;
-  
-  // top: 700px;
-  // left: 570px;
-
-  top: 70%; //
+  font-size: 2.9rem !important;
+  top: 70%;
   left: 33%;
-  width: 30%; //
-  height: 15%; //
-
+  width: 30%; 
+  height: 15%; 
   border-radius: 10px;
   opacity: 1;
   display: inline-block;
@@ -263,6 +258,12 @@ h1 {
 
 // formats download button for various screen sizes: 
 
+@media screen and (min-width: 883px) and (max-width: 1024px) {
+  .DL-btn {
+    font-size: 1.5rem !important;
+  }
+}
+
 @media screen and (max-width: 883px) {
   .DL-btn {
     top: 67.5%; 
@@ -319,13 +320,17 @@ h1 {
     height: 144px;
   }
 
+  div.title {
+    display: none;
+  }
+
   #content {
     width: 105%;
   }
 
   // formats "welcome to our framework" text
   .top-bar {
-    margin-top: 8rem;
+    margin-top: 6.5rem;
   }
 
   .slideshow-top {
