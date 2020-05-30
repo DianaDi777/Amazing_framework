@@ -312,6 +312,9 @@ h1 {
   .top-bar {
     margin-top: 8rem;
   }
+  .slideshow-top {
+    margin-top: 0.1rem;
+  }
   #content .tab .search-bar {
     margin-right: 0.5rem;
   }
@@ -917,6 +920,10 @@ h1 {
   border: 1px dotted #333;
 }
 
+.docContent {
+  display: flex;
+}
+
 .doc-SUBmenu {
   background: #a1a9fe;
 }
@@ -992,8 +999,8 @@ nav ul .feat-show.show {
 
 .btnHAM {
   position: absolute;
-  top: 15px;
-  left: 45px;
+  top: 27%;
+  left: 7%;
   height: 45px;
   width: 45px;
   text-align: center;
@@ -1016,11 +1023,100 @@ nav ul .feat-show.show {
   content: "\f00d";
 }
 
-/*  Media queries */
-@media screen and (max-height: 26.375em) {
-  .doc-SUBmenu-vertical {
-    font-size: 90%;
-    width: 190px;
+.typography-quote {
+  margin: 0 1rem;
+}
+
+.typography-para {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.typography-para pre {
+  white-space: pre-wrap;
+}
+
+@media screen and (max-width: 1024px) {
+  .typography-quote {
+    width: 100%;
+  }
+  .typography-quote pre {
+    white-space: pre-wrap;
+  }
+  .typography-titles {
+    width: 90%;
+  }
+  .typography-titles pre {
+    white-space: pre-wrap;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .docContent {
+    display: block;
+  }
+  #docTabs {
+    width: 100%;
+    text-align: center;
+    margin-top: 2em;
+  }
+  #docTabs h3 {
+    padding: 3px;
+  }
+  #docTabs a {
+    padding: 7px;
+  }
+  #docTabs .subMenuDoc a {
+    padding: 7px;
+    text-align: center;
+  }
+  .typography-transformation {
+    width: 90% !important;
+    margin: 0 auto;
+  }
+  .typography-textDec {
+    width: 90% !important;
+    margin: 0 auto;
+  }
+  .typography-fontSize {
+    width: 90% !important;
+    margin: 0 auto;
+  }
+  .typography-typefaces {
+    width: 90% !important;
+    margin: 0 auto;
+  }
+  .typography-quote {
+    width: 95% !important;
+    margin: 0 auto;
+  }
+  .typography-lists {
+    width: 90% !important;
+    margin: 0 auto;
+  }
+  .typography-titles {
+    width: 90% !important;
+    margin: 0 auto;
+  }
+  .typography-para {
+    width: 90% !important;
+    margin: 0 auto;
+  }
+  .doc-titles {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .doc-titles pre {
+    white-space: pre-wrap;
+  }
+  .iconFlex {
+    display: block;
+  }
+  .iconGrid {
+    float: none;
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 1rem;
   }
 }
 

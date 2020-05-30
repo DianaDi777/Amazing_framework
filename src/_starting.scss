@@ -316,7 +316,6 @@ h1 {
      margin: 0 auto;
   }
 
-
   #header .picture {
     height: 144px;
   }
@@ -328,6 +327,10 @@ h1 {
   // formats "welcome to our framework" text
   .top-bar {
     margin-top: 8rem;
+  }
+
+  .slideshow-top {
+    margin-top: 0.1rem;
   }
 
   #content .tab .search-bar {

@@ -1,3 +1,8 @@
+// documentation page: all content below navbar
+.docContent {
+  display: flex;
+}
+// aside navbar: <nav>
 .doc-SUBmenu {
   background: $primaryColor;
 }
@@ -28,6 +33,7 @@
   color: $primaryColor-font;
 }
 
+// also aside navbar: <nav>
 .doc-SUBmenu-vertical {
   width: 240px;
   height: 100%;
@@ -38,8 +44,9 @@
   padding: 1em;
 }
 
-/* Transitions */
 
+/* Transitions */
+// asinde navbar: <nav>
 .doc-SUBmenu {
   transition: all 0.3s ease;
 }
@@ -49,39 +56,39 @@
   color: $primaryColor-font;
 }
 
+// Typography down arrow
 nav ul li a span.spanDROP {
-  //   position: absolute;
-  //   top: 50%;
-  //   right: 20px;
-
   font-size: 22px;
   transition: transform 0.4s;
   transform: translateY(-10%);
 }
+
+// Typography down arrow click animation
 nav ul li a span.rotate {
   transform: translateY(-10%) rotate(-180deg);
 }
 
+// Typography down arrow styling
 nav ul li.active a {
   background: $button-active;
   color: $primaryColor-font;
 }
 
-// nav ul li a:hover span.spanMenu {
-//   transform: translateY(-10%) rotate(-180deg);
-// }
-
+// don't display the submenu initially
 nav ul ul {
   display: none;
 }
+
 nav ul .feat-show.show {
   display: block;
 }
 
 .btnHAM {
   position: absolute;
-  top: 15px;
-  left: 45px;
+  // top: 15px;
+  // left: 45px;
+  top: 27%;
+  left: 7%;
   height: 45px;
   width: 45px;
   text-align: center;
@@ -94,21 +101,154 @@ nav ul .feat-show.show {
     line-height: 45px;
   }
 }
+
 .btnHAM.clickHAM {
   left: 260;
   span::before {
     content: "\f00d";
   }
 }
-/*  Media queries */
 
-// @media screen and (max-width: 55.1875em) {
-//
-// }
+// Quote - Entire Paragraph Fragment
+.typography-quote {
+  margin: 0 1rem;
+}
 
-@media screen and (max-height: 26.375em) {
-  .doc-SUBmenu-vertical {
-    font-size: 90%;
-    width: 190px;
+// Typography - Paragraph
+.typography-para {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.typography-para pre {
+  white-space: pre-wrap;
+}
+
+// desktop (small size)
+@media screen and (max-width: 1024px) {
+  // Quote - Entire Paragraph Fragment
+  .typography-quote {
+    width: 100%;
+  }
+
+  // Quote - code text
+  .typography-quote pre {
+    white-space: pre-wrap;
+  }
+
+  // Title - Entire Paragraph Fragment
+  .typography-titles {
+    width: 90%;
+  }
+
+  // Title - code text
+  .typography-titles pre {
+    white-space: pre-wrap;
   }
 }
+
+// mobile
+@media screen and (max-width: 375px ) {
+
+  // documentation page: all content below navbar
+  .docContent {
+    display: block;
+  }
+
+  // doucmentation page: aside navbar <nav>
+  #docTabs {
+    width: 100%;
+    text-align: center;
+    margin-top: 2em;
+
+    h3 {
+      padding: 3px;
+    }
+
+    a {
+      padding: 7px;
+    }
+
+    .subMenuDoc a {
+      padding: 7px;
+      text-align: center;
+    }
+  }
+
+  // Transformation - Entire Paragraph Fragment
+  .typography-transformation {
+    width: 90% !important;
+    margin: 0 auto;
+  }
+
+  // Text Decoration - Entire Paragraph Fragment
+  .typography-textDec {
+    width: 90% !important;
+    margin: 0 auto;
+  }
+  
+  // Font Size - Entire Paragraph Fragment
+  .typography-fontSize {
+    width: 90% !important;
+    margin: 0 auto;
+  }
+
+  // Typefaaces - Entire Paragraph Fragment
+  .typography-typefaces {
+    width: 90% !important;
+    margin: 0 auto;
+  }
+ 
+  // Quote - Entire Paragraph Fragment
+  .typography-quote {
+    width: 95% !important;
+    margin: 0 auto;
+  }
+
+  // Lists - Entire Paragraph Fragment
+  .typography-lists {
+    width: 90% !important;
+    margin: 0 auto;
+  }
+
+  // Titles - Entire Paragraph Fragment
+  .typography-titles {
+    width: 90% !important;
+    margin: 0 auto;
+  }
+
+  // Typography - Entire Paragraph Fragment
+  .typography-para {
+    width: 90% !important;
+    margin: 0 auto;
+  }
+
+  // float (flex.html) fragment - code text
+  .doc-titles {
+    width: 100%;
+    margin: 0 auto;
+
+    & pre {
+      white-space: pre-wrap;
+    }
+  }
+
+  // icons fragment
+  .iconFlex {
+    display: block;
+  }
+
+  .iconGrid {
+    float: none;
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+  }
+}
+
+// @media screen and (max-height: 26.375em) {
+//   .doc-SUBmenu-vertical {
+//     font-size: 90%;
+//     width: 190px;
+//   }
+// }
