@@ -366,9 +366,6 @@ i.fas.fa-bars {
 }
 
 @media screen and (min-width: 376px) and (max-height: 375px) {
-  ul {
-    margin-top: 0.5em;
-  }
   li {
     grid-row: 1;
   }
@@ -382,9 +379,6 @@ i.fas.fa-bars {
 }
 
 @media screen and (min-width: 768px) {
-  ul {
-    margin-top: 1em;
-  }
   li {
     grid-row: 1;
   }
