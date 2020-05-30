@@ -3,7 +3,7 @@ $(".btnHAM").click(function () {
   $(this).toggleClass("clickHAM");
 });
 
-//sub menu - arrow toggle; colors change and menue collapces
+//sub menu - arrow toggle; colors change and menue collapses
 $(".feat-btn").click(function () {
   $("nav ul .feat-show").toggleClass("show");
   $("nav ul .first").toggleClass("rotate");

@@ -1,13 +1,16 @@
 $(document).ready(function () {
+  // aside navbar: <nav>
   $("#docTabs")
     .find("a")
     .on("click", function (e) {
       e.preventDefault();
 
+      // tab content: <div> gets the html fragments
       var $desc = $("#docDesciption");
 
+      // switch for <a>
       switch ($(this).attr("href")) {
-        //sub menue load
+        //submenu load
         case "011.html":
           $desc.load("doc/paragraphs.html");
           break;
@@ -33,7 +36,7 @@ $(document).ready(function () {
           $desc.load("doc/textdecor.html");
           break;
 
-        //submenue ends
+        //submenu ends, normal aside navbar continues:
         case "02.html":
           $desc.load("doc/.html");
           break;
