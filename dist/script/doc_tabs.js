@@ -37,24 +37,42 @@ $(document).ready(function () {
           break;
 
         //submenu ends, normal aside navbar continues:
-        case "02.html":
-          $desc.load("doc/.html");
+        case "01.html":
+          $desc.load("doc/tables.html");
           break;
 
+        case "02.html":
+          $desc.load("doc/forms.html");
+          break;
         case "03.html":
-          $desc.load("../.html");
+          $desc.load("doc/buttons.html");
           break;
         case "04.html":
           $desc.load("doc/flex.html");
           break;
         case "05.html":
-          $desc.load("../.html");
+          $desc.load("doc/grid.html");
           break;
         case "06.html":
           $desc.load("doc/icons2.html");
           break;
         case "07.html":
-          $desc.load("doc/.html");
+          $desc.load("doc/Images.html");
+          break;
+        case "08.html":
+          $desc.load("doc/noprint.html");
+          break;
+        case "10.html":
+          $desc.load("doc/shadow.html");
+          break;
+        case "20.html":
+          $desc.load("doc/opacity.html");
+          break;
+        case "21.html":
+          $desc.load("doc/spacing.html");
+          break;
+        case "22.html":
+          $desc.load("doc/borders.html");
           break;
       }
     });

@@ -55,6 +55,37 @@
     transform: scale(0.9);
   }
 }
+//BTN-1 style but without rule 'display: inline-block'
+.BTN-1_2 {
+  margin-top: 40px;
+  background: $primaryColor-font;
+  padding: 12px;
+  text-align: center;
+  color: $secWhite;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 0;
+  text-decoration: none;
+  border-style: none;
+  border-width: 0;
+  color: $secWhite;
+  background-color: $primaryColor-font;
+  border-radius: 10px;
+  transform: translateZ(0);
+  transition: transform 0.25s ease-out;
+  opacity: 1;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    transform: scale(1.05);
+    opacity: 0.8;
+    transition: opacity 0.15s ease-out;
+  }
+  &:active {
+    transform: scale(0.9);
+  }
+}
 .BTN-2 {
   text-decoration: none;
   transform: translateZ(0);
