@@ -356,3 +356,56 @@ h1 {
     justify-content: center;
   }
 }
+
+#main-footer {
+  background: $primaryColor;
+  color: $mainWhite;
+  height: 7rem;
+
+  .containerFT {
+    max-width: 1280px;
+    padding: 0 1.5rem;
+    margin: auto; //pushes in a center
+    overflow: hidden; //nothing goes out
+  }
+
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    height: 7rem;
+    align-items: center;
+
+    .SocialMedia .fab {
+      margin-right: 1rem;
+
+      height: 50px;
+      width: 50px;
+      line-height: 50px;
+      text-align: center;
+      padding: 0.5rem;
+      color: $mainWhite;
+
+      &:hover {
+        background: $primaryColor;
+      }
+    }
+  }
+}
+.comp-ex-footer {
+  margin-top: 30rem;
+}
+@media (max-width: 570px) {
+  // Footer
+  #main-footer {
+    height: 10rem;
+
+    .footer-content {
+      flex-direction: column;
+      padding: 1rem;
+      height: 10rem;
+    }
+  }
+  .comp-ex-footer {
+    margin-top: 0.5rem;
+  }
+}

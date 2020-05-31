@@ -345,6 +345,58 @@ h1 {
   }
 }
 
+#main-footer {
+  background: #a1a9fe;
+  color: #ffffff;
+  height: 7rem;
+}
+
+#main-footer .containerFT {
+  max-width: 1280px;
+  padding: 0 1.5rem;
+  margin: auto;
+  overflow: hidden;
+}
+
+#main-footer .footer-content {
+  display: flex;
+  justify-content: space-between;
+  height: 7rem;
+  align-items: center;
+}
+
+#main-footer .footer-content .SocialMedia .fab {
+  margin-right: 1rem;
+  height: 50px;
+  width: 50px;
+  line-height: 50px;
+  text-align: center;
+  padding: 0.5rem;
+  color: #ffffff;
+}
+
+#main-footer .footer-content .SocialMedia .fab:hover {
+  background: #a1a9fe;
+}
+
+.comp-ex-footer {
+  margin-top: 30rem;
+}
+
+@media (max-width: 570px) {
+  #main-footer {
+    height: 10rem;
+  }
+  #main-footer .footer-content {
+    flex-direction: column;
+    padding: 1rem;
+    height: 10rem;
+  }
+  .comp-ex-footer {
+    margin-top: 0.5rem;
+  }
+}
+
 i.fas.fa-bars {
   color: #04aeb4;
   text-align: center;
