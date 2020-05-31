@@ -9,6 +9,11 @@ $(".feat-btn").click(function () {
   $("nav ul .first").toggleClass("rotate");
 });
 
+$(".marg-btn").click(function () {
+  $("nav ul .marg-show").toggleClass("show1");
+  $("nav ul .secondSB").toggleClass("rotate");
+});
+
 $("nav ul li").click(function () {
   $(this).addClass("active").siblings().removeClass("active");
 });

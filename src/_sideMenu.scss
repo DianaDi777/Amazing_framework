@@ -44,7 +44,6 @@
   padding: 1em;
 }
 
-
 /* Transitions */
 // asinde navbar: <nav>
 .doc-SUBmenu {
@@ -80,6 +79,9 @@ nav ul ul {
 }
 
 nav ul .feat-show.show {
+  display: block;
+}
+nav ul .marg-show.show1 {
   display: block;
 }
 
@@ -148,8 +150,8 @@ nav ul .feat-show.show {
 }
 
 // mobile
-@media screen and (max-width: 768px ) {
-// @media screen and (max-width: 375px ) {
+@media screen and (max-width: 768px) {
+  // @media screen and (max-width: 375px ) {
 
   // documentation page: all content below navbar
   .docContent {
@@ -187,7 +189,7 @@ nav ul .feat-show.show {
     width: 90% !important;
     margin: 0 auto;
   }
-  
+
   // Font Size - Entire Paragraph Fragment
   .typography-fontSize {
     width: 90% !important;
@@ -199,7 +201,7 @@ nav ul .feat-show.show {
     width: 90% !important;
     margin: 0 auto;
   }
- 
+
   // Quote - Entire Paragraph Fragment
   .typography-quote {
     width: 95% !important;

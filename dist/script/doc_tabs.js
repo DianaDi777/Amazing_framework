@@ -56,13 +56,13 @@ $(document).ready(function () {
         case "06.html":
           $desc.load("doc/icons2.html");
           break;
-        case "07.html":
-          $desc.load("doc/Images.html");
-          break;
+        // case "07.html":
+        //   $desc.load("doc/Images.html");
+        //   break;
         case "08.html":
           $desc.load("doc/noprint.html");
           break;
-        case "10.html":
+        case "010.html":
           $desc.load("doc/shadow.html");
           break;
         case "20.html":
@@ -70,6 +70,15 @@ $(document).ready(function () {
           break;
         case "21.html":
           $desc.load("doc/spacing.html");
+          break;
+        case "21-1-1.html":
+          $desc.load("doc/margin.html");
+          break;
+        case "21-1-2.html":
+          $desc.load("doc/marginRL.html");
+          break;
+        case "21-1-3.html":
+          $desc.load("doc/marginALL.html");
           break;
         case "22.html":
           $desc.load("doc/borders.html");

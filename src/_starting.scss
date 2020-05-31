@@ -4,13 +4,16 @@
   box-sizing: border-box; // very important for our layout
 }
 
-html, body {
+html,
+body {
   width: 100%;
   /*height: 100%;*/
   margin: 0;
   padding: 0;
 }
-
+pre {
+  white-space: pre-wrap;
+}
 a {
   text-decoration: none;
   font-family: $font-main;
@@ -32,7 +35,10 @@ ul {
   list-style: none;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   text-transform: uppercase;
 }
 
@@ -60,7 +66,8 @@ h1 {
   transition: transform 0.25s ease-out;
 
   //home page btn
-  &:hover,  &:focus {
+  &:hover,
+  &:focus {
     transform: scale(1.05);
   }
 }
@@ -74,13 +81,14 @@ h1 {
   font-size: 2.9rem !important;
   top: 70%;
   left: 33%;
-  width: 30%; 
-  height: 15%; 
+  width: 30%;
+  height: 15%;
   border-radius: 10px;
   opacity: 1;
   display: inline-block;
   transition: opacity 0.15s ease-in;
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     opacity: 0.5;
     transition: opacity 0.15s ease-in;
     background-color: $prim-opac;
@@ -191,7 +199,7 @@ h1 {
       background-color: transparent;
     }
   }
-  
+
   // TAB HOME
   .illustration {
     text-align: center;
@@ -252,11 +260,10 @@ h1 {
       margin-right: 5px;
       border-radius: 30px;
     }
-  }   // end of .tab .list
-}     // end of content
+  } // end of .tab .list
+} // end of content
 
-
-// formats download button for various screen sizes: 
+// formats download button for various screen sizes:
 
 @media screen and (min-width: 883px) and (max-width: 1024px) {
   .DL-btn {
@@ -266,54 +273,53 @@ h1 {
 
 @media screen and (max-width: 883px) {
   .DL-btn {
-    top: 67.5%; 
+    top: 67.5%;
     left: 33%;
     padding: 0.5rem !important;
-    width: 30%; 
-    height: 20%; 
+    width: 30%;
+    height: 20%;
     font-size: 1.25rem !important;
   }
 }
 
-@media screen and (max-width: 569px){
+@media screen and (max-width: 569px) {
   .DL-btn {
-    top: 67.5%; 
+    top: 67.5%;
     left: 31%;
     padding: 0.25rem !important;
-    width: 35%; 
+    width: 35%;
     height: 20%;
-    font-size: 1.25rem !important; 
+    font-size: 1.25rem !important;
   }
 }
 
-@media screen and (max-width: 415px){
+@media screen and (max-width: 415px) {
   .DL-btn {
-    top: 65%; 
+    top: 65%;
     left: 30%;
     padding: 0.25rem !important;
-    width: 35%; 
+    width: 35%;
     height: 25%;
-    font-size: 1rem !important; 
+    font-size: 1rem !important;
   }
 }
 
-// formats header for mobile: 
-@media screen and (max-width: 500px){
+// formats header for mobile:
+@media screen and (max-width: 500px) {
   body {
     width: 100%;
   }
 
   #header {
-      width: 110%;
-      height: 140px;
-      margin: 0 auto;
-      margin-bottom: 4rem;
-
+    width: 110%;
+    height: 140px;
+    margin: 0 auto;
+    margin-bottom: 4rem;
   }
   #header .nav-bar {
-     display: block;
-     width: 50%;
-     margin: 0 auto;
+    display: block;
+    width: 50%;
+    margin: 0 auto;
   }
 
   #header .picture {
@@ -349,5 +355,4 @@ h1 {
   #content .tab .list {
     justify-content: center;
   }
-
 }
