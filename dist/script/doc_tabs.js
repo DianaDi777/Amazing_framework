@@ -33,7 +33,7 @@ $(document).ready(function () {
           $desc.load("doc/titles.html");
           break;
         case "018.html":
-          $desc.load("doc/textdecor.html");
+          $desc.load("doc/maxW.html");
           break;
 
         //submenu ends, normal aside navbar continues:
@@ -64,6 +64,9 @@ $(document).ready(function () {
           break;
         case "010.html":
           $desc.load("doc/shadow.html");
+          break;
+        case "019.html":
+          $desc.load("doc/line-height.html");
           break;
         case "20.html":
           $desc.load("doc/opacity.html");

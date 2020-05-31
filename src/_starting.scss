@@ -357,6 +357,33 @@ h1 {
   }
 }
 
+//doc pages content - flexbox
+
+.containerFlex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  div {
+    width: 300px;
+  }
+}
+.containerFlex2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  // div {
+  //   width: 500px;
+  //   height: 400px;
+  //   overflow: hidden;
+  // }
+}
+.containerFlex3 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+}
+
+// Footer
 #main-footer {
   background: $primaryColor;
   color: $mainWhite;
@@ -395,7 +422,6 @@ h1 {
   margin-top: 30rem;
 }
 @media (max-width: 570px) {
-  // Footer
   #main-footer {
     height: 10rem;
 

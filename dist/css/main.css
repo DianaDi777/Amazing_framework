@@ -345,6 +345,38 @@ h1 {
   }
 }
 
+.containerFlex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.containerFlex div {
+  width: 300px;
+}
+
+.containerFlex2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.containerFlex3 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+}
+
+.containerFlex4 {
+  display: flex;
+  flex-wrap: row wrap;
+  justify-content: left;
+}
+
+.containerFlex4 article {
+  flex: 1 100%;
+}
+
 #main-footer {
   background: #a1a9fe;
   color: #ffffff;
