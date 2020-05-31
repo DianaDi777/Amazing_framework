@@ -83,6 +83,12 @@ $(document).ready(function () {
         case "22.html":
           $desc.load("doc/borders.html");
           break;
+        case "23.html":
+          $desc.load("doc/colors.html");
+          break;
+        case "23-1.html":
+          $desc.load("doc/colors_font.html");
+          break;
       }
     });
 }); //end doc ready

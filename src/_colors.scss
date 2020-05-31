@@ -34,7 +34,10 @@
   color: darken($primaryColor, $amount: 10%);
 }
 .white_bg {
-  background-color: white;
+  background-color: #ffffff;
+}
+.black_bg {
+  background-color: #000000;
 }
 .lightBlue_bg {
   background-color: #e5f9fb;
@@ -80,4 +83,17 @@
 }
 .darkBrown_tx {
   color: #8d755b;
+}
+.white_tx {
+  color: white;
+}
+.black_tx {
+  color: #000000;
+}
+
+.gray_tx {
+  color: #808080;
+}
+.gray_bg {
+  background-color: #fafafa;
 }
