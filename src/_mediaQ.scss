@@ -1,0 +1,10 @@
+//home page odered list
+ol.text-left {
+  margin: 0 25%;
+}
+
+@media screen and (max-width: 894px) {
+  ol.text-left {
+    margin: 0 auto;
+  }
+}
