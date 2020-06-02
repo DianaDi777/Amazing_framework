@@ -372,7 +372,6 @@ h1 {
 }
 
 #main-footer {
-  background: #a1a9fe;
   color: #ffffff;
   height: 7rem;
 }
@@ -1100,6 +1099,18 @@ i.fas.fa-bars {
 
 .gray_bg {
   background-color: #fafafa;
+}
+
+.juicy_green_tx {
+  color: #309c32;
+}
+
+.juicy_green_bg {
+  background-color: #309c32;
+}
+
+.beige_bg {
+  background-color: #e7e2dd;
 }
 
 .float-l {
