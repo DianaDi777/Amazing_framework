@@ -2798,7 +2798,7 @@ nav ul .color-show.show3 {
 
 .col-6-embed {
   display: grid;
-  grid-template-columns: repeat(6 1fr);
+  grid-template-columns: repeat(6, 1fr);
   grid-template-rows: auto;
   border: 1px solid blue;
 }
