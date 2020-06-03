@@ -8,3 +8,31 @@ ol.text-left {
     margin: 0 auto;
   }
 }
+// rull for side menu is in sideMenu.scss partials
+
+// @media screen and (min-width: 500px) and (max-width: 770px) {
+//   .btnHAM {
+//     top: 230px;
+//     left: 75px;
+//   }
+// }
+// @media screen and (max-width: 500px) {
+//   .btnHAM {
+//     top: 230px;
+//     left: 20px;
+//   }
+// }
+
+// @media screen and (min-width: 769px) {
+//   .btnHAM {
+//     display: none;
+//   }
+// }
+
+@media screen and (max-width: 1229px) {
+  .gridDoc {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
