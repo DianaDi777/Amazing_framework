@@ -1,25 +1,28 @@
 //default colors
 $primaryColor: #a1a9fe;
 //side menue
+$prim-opac: #d1d5ff;
 $primaryColor-font: #8187d8;
 $button-hover: #c6cbef;
 $button-active: #e9edfb;
+$search: #f0f0f0;
+$component-frame: #999999;
 
 //fromframework
 $mainWhite: #ffffff;
+
+//use in framework but not in AMAZING FRAMEWORK WEB SITE
+
 $mainGrey: #ececec; //NO $body-font
 $mainBlack: #383838; //NO
 
 //body
-
 $body-font: #808080;
 $background-color: #fafafa;
 //secondary
 $secWhite: #f4f4f4;
 $secGray: #ccc;
 $thirdGray: #d9d9d9;
-
-$header: #19d5a5;
 
 //default font
 $font-main: "Dosis", Helvetica, sans-serif;
@@ -31,3 +34,32 @@ $font-main: "Dosis", Helvetica, sans-serif;
 .primDark {
   color: darken($primaryColor, $amount: 10%);
 }
+
+// shopping cart sass
+
+$mainTransition: all 0.3s linear;
+$mainSpacing: 0.1rem;
+
+//Product info
+
+$pink: #ed8cc7;
+$yellow: #ffe57b;
+$green: #81e4e8;
+$greenOPAC: #a9edef;
+
+$under-line: #dadada;
+// FORM : body
+$formGray: #616060;
+
+// $hamburgerMenu: #19d5a5;
+// $navbarBackground: #a7d7c7;
+// $header: #19d5a5;
+
+//shoping cart example
+$primaryGREEN: #309c32;
+
+$hamburgerMenu: #04aeb4;
+$navbarBackground: #04aeb4;
+// $header: #81e4e8;
+
+// #03989e;

@@ -12,7 +12,13 @@
 
 .Sec {
   &-blue {
-    color: $primaryColor;
+    color: $primaryColor-font;
+  }
+  &-blue_bg {
+    background-color: $primaryColor-font;
+  }
+  &-opac {
+    background-color: $prim-opac;
   }
   &-black {
     color: $mainBlack;
@@ -23,4 +29,81 @@
   &-gray {
     color: $secGray;
   }
+}
+.primDark {
+  color: darken($primaryColor, $amount: 10%);
+}
+.white_bg {
+  background-color: #ffffff;
+}
+.black_bg {
+  background-color: #000000;
+}
+.lightBlue_bg {
+  background-color: #e5f9fb;
+}
+.lightRed_bg {
+  background-color: #f5d3cb;
+}
+.lightYellow_bg {
+  background-color: #f8f493;
+}
+.lightGreen_bg {
+  background-color: #e7f6ac;
+}
+.lgihtBrown_bg {
+  background-color: #f5efd2;
+}
+.darkBlue_bg {
+  background-color: #a7bed3;
+}
+.darkRed_bg {
+  background-color: #8e3635;
+}
+.darkYellow_bg {
+  background-color: #b0993b;
+}
+.darkGreen_bg {
+  background-color: #80984a;
+}
+.darkBrown_bg {
+  background-color: #8d755b;
+}
+.darkBlue_tx {
+  color: #a7bed3;
+}
+.darkRed_tx {
+  color: #8e3635;
+}
+.darkYellow_tx {
+  color: #b0993b;
+}
+.darkGreen_tx {
+  color: #80984a;
+}
+.darkBrown_tx {
+  color: #8d755b;
+}
+.white_tx {
+  color: white;
+}
+.black_tx {
+  color: #000000;
+}
+
+.gray_tx {
+  color: #808080;
+}
+.gray_bg {
+  background-color: #fafafa;
+}
+//smily veggie
+.juicy_green_tx {
+  color: #309c32;
+}
+.juicy_green_bg {
+  background-color: #309c32;
+}
+.beige_bg {
+  background-color: rgb(231, 226, 221);
 }

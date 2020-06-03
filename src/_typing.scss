@@ -225,7 +225,7 @@
 .b {
   &-default {
     border-style: solid;
-    border-width: 1px;
+    border-width: 2px;
   }
 
   &-top {
@@ -261,6 +261,7 @@
   &-blue {
     border-color: $primaryColor;
   }
+
   &-white {
     border-color: $mainWhite;
   }

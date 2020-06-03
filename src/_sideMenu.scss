@@ -1,22 +1,13 @@
-.btn-slideMenue > section {
-  max-width: 260px;
-  width: 90%;
-  margin-right: 40px;
-  margin-left: 60px;
-  margin-top: 200px;
-  margin-bottom: 0;
+// documentation page: all content below navbar
+.docContent {
+  display: flex;
 }
-
-.doc-spmenu {
+// aside navbar: <nav>
+.doc-SUBmenu {
   background: $primaryColor;
 }
 
-//for typography page
-.doc-spmenu-fixed {
-  position: fixed;
-}
-
-.doc-spmenu h3 {
+.doc-SUBmenu h3 {
   color: $secWhite;
   font-size: 1.9em;
   padding: 20px;
@@ -25,77 +16,274 @@
   background: $primaryColor-font;
 }
 
-.doc-spmenu a {
+.doc-SUBmenu a {
   display: block;
   color: $secWhite;
   font-size: 1.1em;
   font-weight: 300;
 }
 
-.doc-spmenu a:hover {
+.doc-SUBmenu a:hover {
   background: $button-hover;
   color: $secWhite;
 }
 
-.doc-spmenu a:active {
+.doc-SUBmenu a:active {
   background: $button-active;
   color: $primaryColor-font;
 }
 
-//for typography page
-.doc-spmenu-vertical {
+// also aside navbar: <nav>
+.doc-SUBmenu-vertical {
   width: 240px;
   height: 100%;
-  top: 0;
-  z-index: 1000;
 }
 
-.doc-spmenu-vertical a {
+.doc-SUBmenu-vertical a {
   border-bottom: 1px solid $primaryColor-font;
   padding: 1em;
 }
 
-/* Vertical menu slides from the left  */
-
-.doc-spmenu-left {
-  left: -240px;
-}
-
-.doc-spmenu-left.doc-spmenu-open {
-  left: 0px;
-}
-
-/* Push classes applied to the body */
-
-.doc-spmenu-push {
-  //   overflow-x: hidden;
-  // goes - behind ; to lower layer
-  position: relative;
-  left: 0;
-}
-
 /* Transitions */
-
-.doc-spmenu,
-.doc-spmenu-push {
-  //   -webkit-transition: all 0.3s ease;
-  //   -moz-transition: all 0.3s ease;
+// asinde navbar: <nav>
+.doc-SUBmenu {
   transition: all 0.3s ease;
 }
 
-/*  Media queries */
+.subMenuDoc li a {
+  background: $button-active;
+  color: $primaryColor-font;
+}
 
-// @media screen and (max-width: 55.1875em) {
-//
-// }
+// Typography down arrow
+nav ul li a span.spanDROP {
+  font-size: 22px;
+  transition: transform 0.4s;
+  transform: translateY(-10%);
+}
 
-@media screen and (max-height: 26.375em) {
-  .doc-spmenu-vertical {
-    font-size: 90%;
-    width: 190px;
-  }
+// Typography down arrow click animation
+nav ul li a span.rotate {
+  transform: translateY(-10%) rotate(-180deg);
+}
 
-  .doc-spmenu-left {
-    left: -190px;
+// Typography down arrow styling
+nav ul li.active a {
+  background: $button-active;
+  color: $primaryColor-font;
+}
+
+// don't display the submenu initially
+nav ul ul {
+  display: none;
+}
+
+nav ul .feat-show.show {
+  display: block;
+}
+nav ul .marg-show.show1 {
+  display: block;
+}
+nav ul .color-show.show3 {
+  display: block;
+}
+
+.btnHAM {
+  position: absolute;
+  top: 230px;
+  left: 10px;
+  // top: 35%;
+  // left: 7%;
+  height: 45px;
+  width: 45px;
+  text-align: center;
+  background-color: $primaryColor;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: left 0.4s ease;
+  span {
+    color: $secWhite;
+    font-size: 28px;
+    line-height: 45px;
   }
 }
+
+.btnHAM.clickHAM {
+  // left: 260;
+  span::before {
+    content: "\f00d";
+  }
+}
+
+.sidebar.noshowSB {
+  display: block;
+}
+
+@media screen and (min-width: 500px) and (max-width: 770px) {
+  .btnHAM {
+    top: 230px;
+    left: 75px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .btnHAM {
+    top: 230px;
+    left: 20px;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .btnHAM {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .sidebar {
+    display: none;
+  }
+}
+// Quote - Entire Paragraph Fragment
+.typography-quote {
+  margin: 0 1rem;
+}
+
+// Typography - Paragraph
+.typography-para {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.typography-para pre {
+  white-space: pre-wrap;
+}
+
+// desktop (small size)
+@media screen and (max-width: 1024px) {
+  // Quote - Entire Paragraph Fragment
+  .typography-quote {
+    width: 100%;
+  }
+
+  // Quote - code text
+  .typography-quote pre {
+    white-space: pre-wrap;
+  }
+
+  // Title - Entire Paragraph Fragment
+  .typography-titles {
+    width: 90%;
+  }
+
+  // Title - code text
+  .typography-titles pre {
+    white-space: pre-wrap;
+  }
+}
+
+// mobile
+@media screen and (max-width: 768px) {
+  // @media screen and (max-width: 375px ) {
+
+  // documentation page: all content below navbar
+  .docContent {
+    display: block;
+  }
+
+  // doucmentation page: aside navbar <nav>
+  #docTabs {
+    width: 100%;
+    text-align: center;
+    margin-top: 2em;
+
+    h3 {
+      padding: 3px;
+    }
+
+    a {
+      padding: 7px;
+    }
+
+    .subMenuDoc a {
+      padding: 7px;
+      text-align: center;
+    }
+  }
+
+  // Transformation - Entire Paragraph Fragment
+  .typography-transformation {
+    width: 90% !important;
+    margin: 0 auto;
+  }
+
+  // Text Decoration - Entire Paragraph Fragment
+  .typography-textDec {
+    width: 90% !important;
+    margin: 0 auto;
+  }
+
+  // Font Size - Entire Paragraph Fragment
+  .typography-fontSize {
+    width: 90% !important;
+    margin: 0 auto;
+  }
+
+  // Typefaaces - Entire Paragraph Fragment
+  .typography-typefaces {
+    width: 90% !important;
+    margin: 0 auto;
+  }
+
+  // Quote - Entire Paragraph Fragment
+  .typography-quote {
+    width: 95% !important;
+    margin: 0 auto;
+  }
+
+  // Lists - Entire Paragraph Fragment
+  .typography-lists {
+    width: 90% !important;
+    margin: 0 auto;
+  }
+
+  // Titles - Entire Paragraph Fragment
+  .typography-titles {
+    width: 90% !important;
+    margin: 0 auto;
+  }
+
+  // Typography - Entire Paragraph Fragment
+  .typography-para {
+    width: 90% !important;
+    margin: 0 auto;
+  }
+
+  // float (flex.html) fragment - code text
+  .doc-titles {
+    width: 100%;
+    margin: 0 auto;
+
+    & pre {
+      white-space: pre-wrap;
+    }
+  }
+
+  // icons fragment
+  .iconFlex {
+    display: block;
+  }
+
+  .iconGrid {
+    float: none;
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+  }
+}
+
+// @media screen and (max-height: 26.375em) {
+//   .doc-SUBmenu-vertical {
+//     font-size: 90%;
+//     width: 190px;
+//   }
+// }

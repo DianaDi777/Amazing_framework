@@ -20,39 +20,95 @@
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
-    <div class="panel" id="header">
+    <!-- NAV -->
+    <div class="panel2" id="header">
       <div class="picture">
         <span class="Main-black"></span>
       </div>
+
       <div class="nav-bar" id="menu-buttons">
         <div class="button selected"><a href="index.html">Home</a></div>
+
         <div class="button">
           <a href="pages/doc.html">Documentation</a>
         </div>
+
         <div class="button">
           <a href="pages/components.html">Components</a>
         </div>
+
         <div class="button"><a href="pages/examples.html">Examples</a></div>
       </div>
     </div>
+    <!-- /NAV -->
 
     <div id="content">
       <div class="tab home">
         <div class="top-bar">
           <div class="title">
-            <span class="fa fa-home"></span> Welcome to our framework!
+            <span class="fa fa-heart"></span> Welcome to our framework!
           </div>
         </div>
 
-        <div class="panel">
+        <div class="panel2">
           <div class="illustration">
-            <img src="images/home.png" />
-            <div class="comment">
-              <!-- Ready to start creating your own website? -->
+            <div class="relative">
+              <img src="images/home2.jpg" />
+
+              <button class="DL-btn font-3 default all-sides-pa-3 text-center">
+                DOWNLOAD
+              </button>
+            </div>
+
+            <div class="comment all-sides-pa-4 font-3" >
+              <h2>INSTRUCTIONS HOW TO DOWNLOAD AND USE</h2>
+              <p>
+                Our framework is all about helping local produce vendors with our E-commerce Website Framework! It is easy to use and free to download! Just follow the instructions and your business will experience the benefits of the world wide web in no time!
+              </p>
+              <ol class="text-left all-sides-pa-4">
+                <li>Download zip file by clicking the button above.</li>
+                <li> In the HTML file, link to the downloaded CSS file using the &lt;link href = "[file_location]"&gt; element in the head section.</li>
+                <li> In the HTML file, link to the downloaded JS file using the &lt;script src = "[file_location]"&gt; element in the bottom of the body section.</li>
+                <li>Assign the appropriate classes to the tags you want to apply to your website!</li>
+              </ol>
             </div>
           </div>
+          <!-- <button class="DL-btn font-2 default all-sides-pa-3 text-center">
+            DOWNLOAD
+          </button> -->
         </div>
       </div>
+      <!-- tab home -->
+
+      <footer id="main-footer">
+        <div class="footer-content containerFT">
+          <!-- <p>Copyright &copy;</p> -->
+          <div>
+            Contuct us:
+            <a href="mailto:awesome-framework@gmail.com" style="color: white;">
+              <p>awesome-framework@gmail.com</p>
+            </a>
+          </div>
+          <div class="SocialMedia">
+            <a
+              href="https://www.facebook.com/profile.php?id=1644859997"
+              target="_blank"
+              ><i class="fab fa-facebook-f fa-3x"></i>
+            </a>
+
+            <a
+              href="https://www.instagram.com/diana_di_california/"
+              target="_blank"
+              ><i class="fab fa-instagram-square fa-3x"></i
+            ></a>
+
+            <a href="https://github.com/DianaDi777" target="_blank"
+              ><i class="fab fa-github fa-3x"></i
+            ></a>
+          </div>
+        </div>
+      </footer>
     </div>
+    <!-- content -->
   </body>
 </html>
