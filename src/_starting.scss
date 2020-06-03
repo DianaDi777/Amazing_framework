@@ -18,7 +18,15 @@ a {
   text-decoration: none;
   font-family: $font-main;
   color: $mainBlack;
+  // &:active {
+  //   border: none;
+  //   outline: none;
+  // }
 }
+// button:active {
+//   border: none;
+//   outline: none;
+// }
 
 body {
   background-color: $background-color;
